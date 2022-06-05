@@ -1,4 +1,4 @@
-# flash_chat
+# Chat Inc.
 
 A new Flutter project.
 
