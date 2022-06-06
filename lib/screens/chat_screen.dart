@@ -66,6 +66,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         leading: null,
         actions: <Widget>[
@@ -128,7 +129,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 },
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 8,right: 8,bottom: 8,top: 3),
+                padding: EdgeInsets.only(left: 8,right: 8,bottom: 8+MediaQuery.of(context).viewInsets.bottom,top: 3),
                 child: Material(
                   color: Color(0xff3e4785),
                   borderRadius: BorderRadius.circular(25),
