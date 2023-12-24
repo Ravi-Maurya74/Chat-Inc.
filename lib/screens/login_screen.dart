@@ -1,12 +1,11 @@
-import 'package:flash_chat/screens/chat_screen.dart';
 import 'package:flash_chat/screens/room_selector.dart';
 import 'package:flutter/material.dart';
 import 'package:flash_chat/components/rounded_button.dart';
-import 'package:flash_chat/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:modal_progress_hud/modal_progress_hud.dart';
+// import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:flash_chat/components/Storage.dart';
 import 'package:flash_chat/components/Finger.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class LoginScreen extends StatefulWidget {
   static String id = 'login_screen';

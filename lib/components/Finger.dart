@@ -16,7 +16,7 @@ class Authentication {
     }
     try {
       final authSuccess = await localAuthentication.authenticate(
-          localizedReason: 'Authenticate to login', biometricOnly: true);
+          localizedReason: 'Authenticate to login');
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('authSuccess=$authSuccess')),
       );
